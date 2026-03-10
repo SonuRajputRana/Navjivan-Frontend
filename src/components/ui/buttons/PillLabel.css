@@ -1,0 +1,16 @@
+@import url(../../../main.css);
+.pill-label {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 9999px;
+
+  background-color: var(--cyan-blue-300);
+  color: var(--cyan-blue-600);
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+
+  user-select: none; 
+}
+

@@ -1,0 +1,27 @@
+@import url(../main.css);
+/* Header css */
+/* Hidden by default */
+.dropdown-wrapper {
+  position: absolute;
+  padding-top: 20px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: scaleY(0);
+  transform-origin: top;
+
+  transition: 
+    transform 0.45s ease-out,
+    opacity 0.35s ease-out;
+
+  z-index: 1000;
+}
+
+/* On hover */
+.group:hover .dropdown-wrapper {
+  opacity: 1;
+  visibility: visible;
+
+  transform: scaleY(1);
+}

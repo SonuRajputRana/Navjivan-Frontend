@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap")
+layer(base);
+
+@import "tailwindcss";
+@import url(main.css);
+
+.bg-box-shadow{
+    box-shadow: 0px 0px 10px rgb(175 181 177 / 27%);
+}
+
+
+
+/* Cyan Blue Background */
+.bg-cyan-600{
+    background-color: var(--cyan-blue-600);  
+}
+.bg-cyan-400{
+    background-color: var(--cyan-blue-400);
+}
+.bg-cyan-300{
+    background-color: var(--cyan-blue-300);
+}
+.bg-cyan-100{
+    background-color: var(--cyan-blue-100);
+}
+/* Cyan Blue Text Color */
+.text-cyan-600{
+    color: var(--cyan-blue-600);
+}
+.text-cyan-400{
+    color: var(--cyan-blue-400);
+}
+.text-cyan-300{
+    color: var(--cyan-blue-300);
+}
+.text-cyan-100{
+    color: var(--cyan-blue-100);
+}
+.text-head-900{
+    color: oklch(0.24 0.04 242.63 / 0.9);
+}
+
+
+/* Dark cyan */
+.bg-dark-cyan-600{
+    background-color: var(--cyan-dark-600);  
+}
+.bg-dark-cyan-100{
+    background-color: var( --cyan-dark-100);  
+}
+.text-dark-cyan-600{
+    color: var(--cyan-dark-600);  
+}
+
+
+.donate-btn {
+  /* border: 1px solid #ffffff;         */
+  border: 2px solid var(--cyan-blue-600);        
+  padding: 8px 20px;               
+  border-radius: 9999px;           
+  background-color: transparent;
+  /* color: #ffffff; */
+  color: var(--cyan-blue-600);
+  cursor: pointer;
+  transition: all 0.3s ease;       
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.donate-btn:hover {
+  /* background-color: #E6E6FA;
+  color: var(--cyan-blue-600);                   */
+  background-color: var(--cyan-blue-600);
+  color: #E6E6FA;
+  border: 1px solid #E6E6FA;
+}
+
+
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 300% 300%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float.delay-2000 {
+  animation-delay: 2s;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.2s ease-out forwards;
+}
