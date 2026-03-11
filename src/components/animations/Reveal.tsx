@@ -37,7 +37,6 @@ const Reveal: React.FC<RevealProps> = ({
   children,
   direction = "fade-up",
   delay = 0,
-  duration = 0.6,
   once = true,
   className = "",
 }) => {

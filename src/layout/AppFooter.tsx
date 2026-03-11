@@ -3,7 +3,7 @@ import Logo from "../images/logo/new-logo.png"
 // import LocationIcon from '../../public/images/icons/location.svg';
 export default function AppFooter() {
   return (
-    <footer className="bg-gradient-to-r from-[#021c1f] to-[#032a2f] text-gray-300">
+    <footer className="bg-linear-to-r from-[#021c1f] to-[#032a2f] text-gray-300">
       
       {/* TOP FOOTER */}
       <div className="max-w-7xl mx-auto px-6 py-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
