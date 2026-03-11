@@ -2,7 +2,8 @@
 layer(base);
 
 @import "tailwindcss";
-@import url(main.css);
+/* @import url(main.css); */
+@import './main.css';
 
 .bg-box-shadow{
     box-shadow: 0px 0px 10px rgb(175 181 177 / 27%);

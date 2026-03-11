@@ -29,7 +29,8 @@ const slides = [
 
 export default function HeroCarousel() {
   const [current, setCurrent] = useState(0);
-  const timeoutRef = useRef(null);
+  // const timeoutRef = useRef(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const resetTimeout = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -63,7 +64,7 @@ export default function HeroCarousel() {
               alt=""
               className={`
                 absolute inset-0 w-full h-full object-fill
-                transition-all duration-[1600ms] ease-in-out
+                transition-all duration-1600 ease-in-out
                 ${current === index 
                   ? "scale-100 opacity-100" 
                   : "scale-105 opacity-90 blur-[2px]"
@@ -80,7 +81,7 @@ export default function HeroCarousel() {
               <div
                 className={`
                   px-4 sm:px-8 md:px-16 text-white max-w-3xl
-                  transition-all duration-[1400ms]
+                  transition-all duration-1400
                   ${
                     current === index
                       ? "opacity-100 translate-y-0"

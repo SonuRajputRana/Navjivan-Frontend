@@ -91,7 +91,7 @@ const ContactUs = () => {
                 />
 
                 <textarea
-                  rows="4"
+                  rows={4}
                   placeholder="Type your message..."
                   className="text-white w-full bg-transparent border-b border-gray-400 focus:border-teal-600 outline-none py-3 resize-none"
                 ></textarea>
