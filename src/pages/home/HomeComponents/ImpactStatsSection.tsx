@@ -76,12 +76,12 @@ const ImpactStatsSection = () => {
           </h2>
         </Reveal>
         {/* Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
           {stats.map((item, index) => (
-            <Reveal key={index}  direction="fade-up" delay={index * 0.15}>
+            <Reveal key={index}  direction="fade-up" delay={index * 0.1}>
               <div
-                key={index}
-                className="bg-white rounded-xl py-8 px-4 text-center shadow-md hover:shadow-lg transition">
+                // key={index}
+                className="bg-white rounded-xl py-8 px-4 text-center shadow-md hover:shadow-lg transition transform-gpu">
                 {/* ICON (same blue for all) */}
                 <div className="flex justify-center mb-4 text-[#1ecbe1]">
                   {item.icon}
