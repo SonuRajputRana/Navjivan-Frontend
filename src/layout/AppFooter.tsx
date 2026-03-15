@@ -55,16 +55,20 @@ export default function AppFooter() {
                 Uttar Pradesh – 247121
             </li>
             <li className="flex gap-3">
-                <span>
-                    <i className="fa-solid fa-phone pr-4"></i>
-                    +91 124-4447700
-                </span>
+               <a href="tel:+917302614061">
+                  <span>
+                      <i className="fa-solid fa-phone pr-4"></i>
+                      +91 73026 14061
+                  </span>
+                </a>
             </li>
             <li className="flex gap-3">
-                <span>
-                    <i className="fa-solid fa-envelope pr-4"></i>
-                    info@navjivanindia.org
-                </span>
+               <a href="mailto:info@navjivanfoundation.com">
+                  <span>
+                      <i className="fa-solid fa-envelope pr-4"></i>
+                      info@navjivanfoundation.com
+                  </span>
+                </a>
             </li>
           </ul>
         </div>
