@@ -1,6 +1,7 @@
 
 // import Logo from "../images/logo/new-logo.png"
-import Logo from "../images/logo/logo.png"
+// import Logo from "../images/logo/logo.png"
+import Logo from "../images/logo/Logo.png"
 // import LocationIcon from '../../public/images/icons/location.svg';
 export default function AppFooter() {
   return (

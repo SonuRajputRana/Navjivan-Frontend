@@ -1,6 +1,6 @@
 import { useState } from "react";
 // import Logo from "/images/logo/navjivan-logo2.png";
-import Logo from '../images/logo/logo.png'
+import Logo from '../images/logo/Logo.png'
 import "./AppHeader.css";
 import DropdownMenu from "../components/ui/dropdown/DropdownMenu";
 import { Link, useLocation } from "react-router";
