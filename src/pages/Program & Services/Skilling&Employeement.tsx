@@ -111,9 +111,6 @@ const SkillingAndEmployeement = () => {
                     {/* Header */}
                     <Reveal direction="fade-up">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        {/* <span className="inline-block px-4 py-1 text-sm rounded-full bg-orange-100 text-orange-600 font-medium mb-4">
-                        Services Offered
-                        </span> */}
                         <PillLabel text="Services Offered"></PillLabel>
                         <h2 className="text-4xl font-bold text-slate-900 mb-4 mt-12">
                         Tailored Training & Employment Support
@@ -174,7 +171,7 @@ const SkillingAndEmployeement = () => {
                             <div className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden">
                                 
                                 {/* Accent Bar */}
-                                <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b bg-cyan-600 to-orange-300" />
+                                <div className="absolute left-0 top-0 h-full w-1 bg-linear-to-b bg-cyan-600 to-orange-300" />
 
                                 {/* Icon */}
                                 <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-cyan-300 text-cyan-600 text-2xl mb-6 group-hover:scale-110 transition-transform">
@@ -205,5 +202,5 @@ const SkillingAndEmployeement = () => {
         </>
     )
 }
-
+// deff
 export default SkillingAndEmployeement

@@ -22,7 +22,6 @@ const VideoAndContent: React.FC<ProgramOverviewProps> = ({
   points = [],
   videoUrl,
   ctaText,
-  onCtaClick,
 }) => {
   return (
     <section className="w-full py-20 bg-white">
@@ -33,7 +32,7 @@ const VideoAndContent: React.FC<ProgramOverviewProps> = ({
           <div className="relative">
             <div className="bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
               <iframe
-                className="w-full h-[300px] md:h-[380px]"
+                className="w-full h-75 md:h-95"
                 src={videoUrl}
                 title="Program Video"
                 allowFullScreen
@@ -69,7 +68,7 @@ const VideoAndContent: React.FC<ProgramOverviewProps> = ({
                   key={index}
                   className="flex gap-4 items-start"
                 >
-                  <span className="mt-[3px] w-5 h-5 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 text-xs font-bold">
+                  <span className="mt-0.75 w-5 h-5 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 text-xs font-bold">
                     ✓
                   </span>
                   <span className="text-gray-800 leading-relaxed">

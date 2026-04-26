@@ -45,9 +45,11 @@ const ContactUs = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-cyan-600">Phone</p>
-                    <p className="text-sm text-gray-200">
-                      +91 XXXXX XXXXX
-                    </p>
+                    <a href="tel:+917302614061">
+                      <p className="text-sm text-gray-200">
+                        +91 73026 14061
+                      </p>
+                    </a>
                   </div>
                 </div>
 
@@ -57,9 +59,11 @@ const ContactUs = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-cyan-600">Email</p>
-                    <p className="text-sm text-gray-200">
-                      info@navjivantrust.org
-                    </p>
+                    <a href="mailto:info@navjivanfoundation.com">
+                      <p className="text-sm text-gray-200">
+                        info@navjivanfoundation.com
+                      </p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -91,7 +95,7 @@ const ContactUs = () => {
                 />
 
                 <textarea
-                  rows="4"
+                  rows={4}
                   placeholder="Type your message..."
                   className="text-white w-full bg-transparent border-b border-gray-400 focus:border-teal-600 outline-none py-3 resize-none"
                 ></textarea>

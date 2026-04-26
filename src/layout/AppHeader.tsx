@@ -1,6 +1,6 @@
 import { useState } from "react";
 // import Logo from "/images/logo/navjivan-logo2.png";
-import Logo from '../images/logo/new-logo.png'
+import Logo from '../images/logo/logo.png'
 import "./AppHeader.css";
 import DropdownMenu from "../components/ui/dropdown/DropdownMenu";
 import { Link, useLocation } from "react-router";
@@ -55,22 +55,27 @@ function Navbar() {
       ${isHomePage ? "absolute bg-transparent" : "relative bg-dark-cyan-600"}
     `}>
       <div className="max-w-7xl mx-auto px-4">
+        {/* <div className="w-full px-8"> */}
         <div className="flex items-center justify-between h-19 text-white">
 
           {/* Logo */}
-          <div className="flex items-center">
+          {/* <div className="flex items-center"> */}
+          <div className="flex items-center flex-shrink-0">
             <img
               src={Logo}
               alt="Navjivan Trust"
-              className="h-16 w-auto mix-blend-screen"
+              className="h-14 w-auto mix-blend-screen"
             />
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8 font-medium">
+          {/* <div className="hidden lg:flex items-center space-x-8 font-medium"> */}
+          <div className="hidden lg:flex items-center space-x-8 font-medium flex-nowrap">
+            
             
             <div className="relative group">
-              <a href="#" className="hover:text-gray-200 flex items-center gap-1">
+              {/* <a href="#" className="hover:text-gray-200 flex items-center gap-1"> */}
+              <a href="#" className="hover:text-gray-200 flex items-center gap-1 whitespace-nowrap">
                 About Us
                 <span>▾</span>
               </a>
@@ -81,7 +86,8 @@ function Navbar() {
               </div>
             </div>
             <div className="relative group">
-              <a href="#" className="hover:text-gray-200 flex items-center gap-1">
+              {/* <a href="#" className="hover:text-gray-200 flex items-center gap-1"> */}
+              <a href="#" className="hover:text-gray-200 flex items-center gap-1 whitespace-nowrap">
                 Programs & Services
                 <span>▾</span>
               </a>
@@ -92,7 +98,8 @@ function Navbar() {
               </div>
             </div>
             <div className="relative group">
-              <a href="#" className="hover:text-gray-200 flex items-center gap-1">
+              {/* <a href="#" className="hover:text-gray-200 flex items-center gap-1"> */}
+              <a href="#" className="hover:text-gray-200 flex items-center gap-1 whitespace-nowrap">
                 Get Involved
                 <span>▾</span>
               </a>
@@ -103,7 +110,8 @@ function Navbar() {
               </div>
             </div>
             <div className="relative group">
-              <a href="#" className="hover:text-gray-200 flex items-center gap-1">
+              {/* <a href="#" className="hover:text-gray-200 flex items-center gap-1"> */}
+              <a href="#" className="hover:text-gray-200 flex items-center gap-1 whitespace-nowrap">
                 Resources
                 <span>▾</span>
               </a>
@@ -114,7 +122,8 @@ function Navbar() {
               </div>
             </div>
             <div className="relative group">
-              <a href="#" className="hover:text-gray-200 flex items-center gap-1">
+              {/* <a href="#" className="hover:text-gray-200 flex items-center gap-1"> */}
+              <a href="#" className="hover:text-gray-200 flex items-center gap-1 whitespace-nowrap">
                 Navjivan Initiactives
                 <span>▾</span>
               </a>
@@ -124,14 +133,16 @@ function Navbar() {
                 <DropdownMenu items={NavjivanInitiactivesMenu}/>
               </div>
             </div>
-            <Link to="/contact" className="hover:text-gray-200">Contact Us</Link>
+            {/* <Link to="/contact" className="hover:text-gray-200">Contact Us</Link> */}
+            <Link to="/contact"  className="hover:text-gray-200 flex items-center gap-1 whitespace-nowrap">Contact Us</Link>
 
 
 
           </div>
 
           {/* Donate Button */}
-          <div className="hidden md:block">
+          {/* <div className="hidden lg:block"> */}
+          <div className="hidden lg:block shrink-0">
             <button className="donate-btn flex">
               Donate Now 
               <svg
@@ -150,7 +161,7 @@ function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button onClick={() => setOpen(!open)}>
               <svg
                 className="w-6 h-6"
@@ -172,7 +183,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-purple-700 px-4 py-4 space-y-3">
+        <div className="lg:hidden bg-purple-700 px-4 py-4 space-y-3">
           <a href="#" className="block">About Us</a>
           <a href="#" className="block">Programs & Services</a>
           <a href="#" className="block">Get Involved</a>

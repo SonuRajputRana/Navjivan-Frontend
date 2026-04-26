@@ -1,6 +1,7 @@
 
 import HeroCarousel from '../../components/ui/carousel/HeroCarousel';
 import AboutNavjivanSection from '../../components/ui/navjivan/AboutNavjivanSection';
+// import Hero from '../../layout/Hero';
 import EmpowerSection from './HomeComponents/EmpowerSection';
 import ImpactStatsSection from './HomeComponents/ImpactStatsSection';
 import InvolvedSection from './HomeComponents/InvolvedSection';
@@ -13,6 +14,7 @@ export default function Home() {
       <div className="home">
          <div className="carousel">
              <HeroCarousel />
+             {/* <Hero /> */}
          </div>
          <div className="navjivan-about-section">
              <AboutNavjivanSection />

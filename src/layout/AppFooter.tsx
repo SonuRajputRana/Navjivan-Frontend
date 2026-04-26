@@ -1,9 +1,10 @@
-// import Logo from '../../public/images/logo/new-logo.png';
-import Logo from "../images/logo/new-logo.png"
+
+// import Logo from "../images/logo/new-logo.png"
+import Logo from "../images/logo/logo.png"
 // import LocationIcon from '../../public/images/icons/location.svg';
 export default function AppFooter() {
   return (
-    <footer className="bg-gradient-to-r from-[#021c1f] to-[#032a2f] text-gray-300">
+    <footer className="bg-linear-to-r from-[#021c1f] to-[#032a2f] text-gray-300">
       
       {/* TOP FOOTER */}
       <div className="max-w-7xl mx-auto px-6 py-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
@@ -13,7 +14,7 @@ export default function AppFooter() {
           <img
             src={Logo}
             alt="Sarthak Logo"
-            className="w-40"
+            className="w-44 mb-4"
           />
 
           <p className="text-sm leading-relaxed">
@@ -55,16 +56,20 @@ export default function AppFooter() {
                 Uttar Pradesh – 247121
             </li>
             <li className="flex gap-3">
-                <span>
-                    <i className="fa-solid fa-phone pr-4"></i>
-                    +91 124-4447700
-                </span>
+               <a href="tel:+917302614061">
+                  <span>
+                      <i className="fa-solid fa-phone pr-4"></i>
+                      +91 73026 14061
+                  </span>
+                </a>
             </li>
             <li className="flex gap-3">
-                <span>
-                    <i className="fa-solid fa-envelope pr-4"></i>
-                    info@navjivanindia.org
-                </span>
+               <a href="mailto:info@navjivanfoundation.com">
+                  <span>
+                      <i className="fa-solid fa-envelope pr-4"></i>
+                      info@navjivanfoundation.com
+                  </span>
+                </a>
             </li>
           </ul>
         </div>
